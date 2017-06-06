@@ -105,11 +105,7 @@ plot.sjedrp <- function (x, scale=1, title=NULL, mirror=FALSE,
   ## SHOW.TITLE:  If false,  do not add any title.
   hts <- (x$ds*scale)
   last.bin <- x$nbins * x$r
-  plot.label <- paste(title,
-                      "eff rad", signif(x$effrad,3),
-                      "pack", signif(x$p,3),
-                      "maxr", signif(x$maxr,3),
-                      "rel", signif(x$k,3))
+  plot.label <- paste(title)
   if (!show.title)
     plot.label <- NULL
   
